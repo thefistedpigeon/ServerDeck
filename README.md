@@ -2,9 +2,48 @@
 
 ServerDeck is a lightweight, self-contained web interface for managing Debian, Ubuntu and Raspberry Pi OS servers.
 
-The goal is to provide the most useful day-to-day server administration tools in a simple interface without becoming a large, resource-heavy control panel. ServerDeck is designed primarily for home servers, homelabs and small systems where a full platform such as Cockpit or Webmin may be more than is needed.
+The goal is to provide the most useful day-to-day server administration tools in a simple interface without becoming a large, resource-heavy control panel. ServerDeck is designed primarily for home servers, homelabs and small systems where a full platform may be more than is needed.
 
 ServerDeck is distributed as a single Python script and uses standard Linux tools wherever possible.
+
+ServerDeck has been written with the help of AI and has been tested on a Raspberry Pi 5 and Raspberry Pi 3b both running Raspberry Pi OS Lite (64bit and 32Bit respectively) as well as a fresh Ubuntu server install. I created it as an alternative to some of the other WebUI's available with a view to be simple and easy to use. It is built around using software like CopyParty and Docker/Portainer in unison rather than to be a "does everything" application.
+
+## Latest Release
+
+To get started and download the latest release type:
+
+```bash
+wget https://github.com/thefistedpigeon/ServerDeck/releases/download/ServerDeck-v1.14.1/serverdeck-v1.14.1.py
+```
+## Installation
+
+Once the ServerDeck script has been downloaded to the server:
+
+```bash
+sudo chmod +x ./serverdeck-v1.14.1.py
+```
+
+Install the service:
+
+```bash
+sudo serverdeck-v1.14.1.py --install-service
+```
+
+ServerDeck shouls start automatically. 
+
+ServerDeck uses port `9090` by default.
+
+Open:
+
+```text
+http://SERVER-IP:9090
+```
+
+A custom port can be selected when installing the service:
+
+```bash
+sudo serverdeck-v1.14.1.py --install-service -port 8081
+```
 
 ## Features
 
@@ -141,38 +180,6 @@ ServerDeck is intended for Debian-derived systems, including:
 - Raspberry Pi OS
 
 Some functionality depends on standard system utilities such as systemd, APT, NetworkManager, Netplan, rsync, smartctl or Docker.
-
-## Installation
-
-Copy the ServerDeck script to the server:
-
-```bash
-sudo mkdir -p /opt/serverdeck
-sudo cp serverdeck.py /opt/serverdeck/serverdeck.py
-sudo chmod 755 /opt/serverdeck/serverdeck.py
-```
-
-Install the systemd service:
-
-```bash
-sudo /opt/serverdeck/serverdeck.py --install-service
-```
-
-Then start ServerDeck:
-
-```bash
-sudo systemctl enable --now serverdeck.service
-```
-
-ServerDeck uses port `9090` by default.
-
-Open:
-
-```text
-http://SERVER-IP:9090
-```
-
-A custom port can be selected when installing the service.
 
 ## Security
 

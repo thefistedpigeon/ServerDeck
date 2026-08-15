@@ -13,7 +13,7 @@ ServerDeck has been written with the help of AI and has been tested on a Raspber
 To get started and download the latest release type:
 
 ```bash
-wget https://github.com/thefistedpigeon/ServerDeck/releases/download/ServerDeck-v1.14.1/serverdeck-v1.14.1.py
+wget https://github.com/thefistedpigeon/ServerDeck/releases/download/ServerDeck-v1.18.0/serverdeck-v1.18.0.py
 ```
 ## Installation
 

@@ -13,20 +13,20 @@ ServerDeck has been written with the help of AI and has been tested on a Raspber
 To get started and download the latest release type:
 
 ```bash
-wget https://github.com/thefistedpigeon/ServerDeck/releases/download/v1.28.1/serverdeck-v1.28.1.py
+wget https://github.com/thefistedpigeon/ServerDeck/releases/download/ServerDeck-v1.30.0-Final/serverdeck-v1.30.0.py
 ```
 ## Installation
 
 Once the ServerDeck script has been downloaded to the server:
 
 ```bash
-sudo chmod +x ./serverdeck-v1.28.1.py
+sudo chmod +x ./serverdeck-v1.30.0.py
 ```
 
 Install the service:
 
 ```bash
-sudo ./serverdeck-v1.28.1.py --install-service
+sudo ./serverdeck-v1.30.0.py --install-service
 ```
 
 ServerDeck shouls start automatically. 
@@ -42,7 +42,7 @@ http://SERVER-IP:9090
 A custom port can be selected when installing the service:
 
 ```bash
-sudo ./serverdeck-v1.28.1.py --install-service -port 8081
+sudo ./serverdeck-v1.30.0.py --install-service -port 8081
 ```
 
 ## Features

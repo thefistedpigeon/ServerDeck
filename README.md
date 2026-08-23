@@ -38,7 +38,7 @@ Install the service:
 sudo ./serverdeck-v1.30.0.py --install-service
 ```
 
-ServerDeck shouls start automatically. 
+ServerDeck should start automatically. 
 
 ServerDeck uses port `9090` by default.
 

@@ -6,6 +6,12 @@ It is designed to make common Linux server administration tasks easier without r
 
 ServerDeck v1 focuses on being **small, understandable and low-overhead**, with monitoring performed on demand or at sensible intervals rather than through permanent metrics collectors.
 
+## Design Philosophy
+
+ServerDeck deliberately avoids heavy dependencies and always-on monitoring systems. It aims to provide the most useful day-to-day server management tasks while staying small enough that the management interface itself has negligible impact on the server.
+
+ServerDeck was built with AI. I am not a programmer, but I wanted to create something that would make managing my home server more simple and be a single downloadable file I could run to install and then use for all the main elements of managing my server(s). I use it exclusively now to manage a bunch of home servers so hopefully all bugs and weird issues have been found and resolved.
+
 ## Supported Systems
 
 - Debian
@@ -228,9 +234,5 @@ Checks are intentionally lightweight and do not require a permanent monitoring s
 - Hostname-first browser tab titles
 - Ctrl+K command/search palette
 - Consistent guided installation workflows for managed applications
-
-## Design Philosophy
-
-ServerDeck deliberately avoids heavy dependencies and always-on monitoring systems. It aims to provide the most useful day-to-day server management tasks while staying small enough that the management interface itself has negligible impact on the server.
 
 Where possible, ServerDeck manages the underlying Linux tools rather than replacing them.

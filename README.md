@@ -28,7 +28,7 @@ ServerDeck supports common x86-64 and ARM systems. Individual Docker application
 To get started and download the latest release type:
 
 ```bash
-wget https://github.com/thefistedpigeon/ServerDeck/releases/download/latest/serverdeck-v1.36.1.py
+wget https://github.com/thefistedpigeon/ServerDeck/releases/download/1.36.1/serverdeck-v1.36.1.py
 ```
 ## Installation
 

@@ -16,26 +16,26 @@ ServerDeck supports common x86-64 and ARM systems. Individual Docker application
 
 ## Latest Release
 
-> **Current release:** v1.34.0
+> **Current release:** v1.36.1
 > ServerDeck v1 is feature complete. Future development continues with ServerDeck v2.
 
 To get started and download the latest release type:
 
 ```bash
-wget https://github.com/thefistedpigeon/ServerDeck/releases/download/latest/serverdeck-v1.34.0.py
+wget https://github.com/thefistedpigeon/ServerDeck/releases/download/latest/serverdeck-v1.36.1.py
 ```
 ## Installation
 
 Once the ServerDeck script has been downloaded to the server:
 
 ```bash
-sudo chmod +x ./serverdeck-v1.34.0.py
+sudo chmod +x ./serverdeck-v1.36.1.py
 ```
 
 Install the service:
 
 ```bash
-sudo ./serverdeck-v1.34.0.py --install-service
+sudo ./serverdeck-v1.36.1.py --install-service
 ```
 
 ServerDeck should start automatically. 
@@ -51,7 +51,7 @@ http://SERVER-IP:9090
 A custom port can be selected when installing the service:
 
 ```bash
-sudo ./serverdeck-v1.34.0.py --install-service -port 8081
+sudo ./serverdeck-v1.36.1.py --install-service -port 8081
 ```
 
 ## ServerDeck v1
